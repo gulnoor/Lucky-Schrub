@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light-color-2: #b3ece8;
+    --light-color-1: #3BD4C7;
+    --primary-color: #26877f;
+    --dark-color-1: #17544f;
+    --dark-color-2: #09201f;
+}
+
+#logo{
+    height: 120px;
+}
+#small-logo{
+    height: 50px;
+}
+.footer{
+    display: flex;
+}
