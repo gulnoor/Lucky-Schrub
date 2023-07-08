@@ -11,59 +11,70 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
+<style>
+  @font-face {
+    /* (Font: Sugo Pro Family by Zetafonts -http://www.zetafonts.com/collection/72) */
+    font-family: Sugo-Pro;
+    src: url("./sugo_pro_display/Sugo-Pro-Display-Light-trial.ttf");
+}
+</style>
 <body>
+
   <header>
-    <!-- logo -->
-    <figure>
-      <img id="logo" src="./assets/Asset%202@3x.png" alt="logo">
-    </figure>
+    <img id="logo" src="./assets/Asset%202@3x.png" alt="logo">
+    <div class="header-text">
+      <h1>Lucky Shrub</h1>
+      <p>Garden Design & Nursery</p>
+    </div>
   </header>
 
-  <nav></nav>
-  <!-- Four links. First should be homepage -->
-  <a href="">Home</a>
-  <a href="">nav2</a>
-  <a href="">Nursery</a>
-  <a href="">About</a>
-  <main></main>
-  <!-- full width promotional banner that links to promotion offer and three columns with text and images below it -->
-  <div class="banner"></div>
-  <div class="main-container">
-    <div class="column1">
-      <img src="assets/Asset%201@3x.png" alt="">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur animi, sequi a voluptates non sed
-        culpa similique temporibus veniam? Culpa, doloribus. Blanditiis, commodi nulla.
-      </p>
+  <nav>
+    <a href="">Home</a>
+    <a href="">nav2</a>
+    <a href="">Nursery</a>
+    <a href="">About</a>
+  </nav>
+
+  <main>
+    <div class="banner">
+      <p id="promotion">Learn to center a div vertically</p>
     </div>
-    <div class="column2">
-      <img src="assets/Asset%201@3x.png" alt="">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-        neque nobis animi corrupti id cum corporis, quisquam nostrum eos
-        nesciunt.
-      </p>
-    </div>
-    <div class="column3">
-      <img src="assets/Asset%201@3x.png" alt="">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quas recusandae voluptatibus vitae illo et
-        libero sunt aperiam dignissimos velit, dolores ipsa ducimus adipisci, necessitatibus nihil magnam dicta facere
-        culpa.</p>
-    </div>
-  </div>
+    <section class="main-columns">
+      <div class="column">
+        <img src="assets/Asset%201@3x.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur animi, sequi a voluptates non sed
+          culpa similique temporibus veniam? Culpa, doloribus. Blanditiis, commodi nulla.
+        </p>
+      </div>
+      <div class="column">
+        <img src="assets/Asset%201@3x.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          neque nobis animi corrupti id cum corporis, quisquam nostrum eos
+          nesciunt.
+        </p>
+      </div>
+      <div class="column">
+        <img src="assets/Asset%201@3x.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quas recusandae voluptatibus vitae illo et
+          libero sunt aperiam dignissimos velit, dolores ipsa ducimus adipisci, necessitatibus nihil magnam dicta facere
+          culpa.</p>
+      </div>
+
+    </section>
+
+  </main>
+
 
   <footer>
-    <div class="footer">
-      <div>
+      <div class="footer">
         <img id="small-logo" src="./assets/Asset%203@3x.png" alt="small logo">
+        <div class="copywriting">
+          <p>© 2023 Lucky Shrub. All rights reserved.</p>
+          <p>Privacy Policy | Terms of Use</p>
+        </div>
       </div>
-      <div class="copywriting">
-        <!-- copywright disclaimer -->
-        <p>© 2023 Lucky Shrub. All rights reserved.</p>
-        <p>Privacy Policy | Terms of Use</p>
-      </div>
-    </div>
   </footer>
 </body>
 

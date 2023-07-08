@@ -2,26 +2,99 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: solid 1px red; */
+}
+@font-face {
+    /* (Font: Sugo Pro Family by Zetafonts -http://www.zetafonts.com/collection/72) */
+    font-family: Sugo-Pro;
+    src: url("./sugo_pro_display/Sugo-Pro-Display-Light-trial.ttf");
 }
 :root{
-    --light-color-2: #b3ece8;
-    --light-color-1: #3BD4C7;
+    --light-color-2: #f1f5f4;
+    --light-color-1: #b4dad7;
     --primary-color: #26877f;
     --dark-color-1: #17544f;
-    --dark-color-2: #09201f;
+    --dark-color-2: #123d3c;
+}
+header{
+    background-color: var(--light-color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: var(--dark-color-1);
+
+    padding: 10px;
+}
+header h1{
+    font-family: Sugo-Pro;
+    font-size: 2.5rem;
+    color: var(--dark-color-1);
+
+}
+#logo{
+    height: 100px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    
+}
+nav{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
-#logo{
-    height: 120px;
+main{
+    background-color: var(--light-color-2);
 }
-.main-container{
+.banner{
+   height: 30vh;
+
+}
+#promotion{
+    margin: auto;
+    width: 50%;
+}
+.main-columns{
     display: flex;
+    border: solid 1px red;
+    max-width: 1080px;
+    margin:auto;
+    flex-wrap: wrap;
+
+    
 }
-.main-container img{
-    height: 120px}
-#small-logo{
-    height: 50px;
+.column{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: solid 1px red;
 }
+main img{
+    height: 240px;
+    padding: 20px;}
+
 .footer{
     display: flex;
+    background-color: var(--dark-color-2);
+    color: gainsboro;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    padding: 10px;
+}
+footer img {
+    height: 54px;
+    padding: 2px 20px 2px 20px;
 }
