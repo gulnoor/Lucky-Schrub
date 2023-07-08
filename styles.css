@@ -52,16 +52,16 @@ main{
     background-color: var(--light-color-2);
 }
 .banner{
-   height: 30vh;
+    display: flex;
+    border: solid;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
 
 }
-#promotion{
-    margin: auto;
-    width: 50%;
-}
+
 .main-columns{
     display: flex;
-    border: solid 1px red;
     max-width: 1080px;
     margin:auto;
     flex-wrap: wrap;
@@ -75,7 +75,6 @@ main{
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    border: solid 1px red;
 }
 main img{
     height: 240px;
