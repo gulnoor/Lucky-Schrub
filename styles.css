@@ -11,24 +11,31 @@
     --primary-color: #26877f;
     --dark-color-1: #17544f;
     --dark-color-2: #123d3c;
+}
+body{
     background: var(--light-color-2);
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
 header{
-    background-color: var(--light-color-1);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     color: var(--dark-color-1);
-
     padding: 10px;
 }
 header h1{
     font-family: Sugo-Pro;
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: var(--dark-color-1);
-
 }
+
+header p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    }
 #logo{
     height: 120px;
     padding-right: 20px;
@@ -37,10 +44,12 @@ header h1{
     
 }
 nav{
-    background-color: var(--primary-color);
     display: flex;
+    background-color: var(--primary-color);
     justify-content: center;
     padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 50vh;
 
 
 }
@@ -50,11 +59,9 @@ nav a{
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    
 }
 
-main{
-    background-color: var(--light-color-2);
-}
 .banner{
     display: flex;
     min-height: 15vh;
@@ -66,7 +73,7 @@ main{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .banner>p{
-    padding-right: 10px;
+    padding: 10px 5px;
 }
 
 #buy-now{
@@ -82,6 +89,7 @@ main img{
     height: 200px;
     width: 220px;
     border-radius: 10px;
+    object-fit: cover;
 }
 .main-columns{
     display: flex;
@@ -111,6 +119,7 @@ main img{
     display: flex;
     background-color: var(--dark-color-2);
     color: gainsboro;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
     font-size: small;
