@@ -4,11 +4,7 @@
     box-sizing: border-box;
     /* border: solid 1px red; */
 }
-@font-face {
-    /* (Font: Sugo Pro Family by Zetafonts -http://www.zetafonts.com/collection/72) */
-    font-family: Sugo-Pro;
-    src: url("./sugo_pro_display/Sugo-Pro-Display-Light-trial.ttf");
-}
+
 :root{
     --light-color-2: #f1f5f4;
     --light-color-1: #b4dad7;
