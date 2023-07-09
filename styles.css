@@ -33,6 +33,7 @@ header h1{
     font-family: Sugo-Pro;
     font-size: 4rem;
     color: var(--dark-color-1);
+    text-align: center;
 }
 
 header p{
@@ -77,9 +78,13 @@ nav a{
     background-color: var(--primary-color);
     color: white;
 }
+#buy-now:hover{
+    background-color: var(--dark-color-1);
+    transition: 0.2s ease-in-out;
+}
 
 main img{
-    width: 100%;
+    max-width: 100%;
     /* width:240px; */
     /* min-width: 200px; */
     height: auto;
@@ -103,11 +108,16 @@ main img{
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    background-color:var(--light-color-1);
+    background-color:rgb(243, 243, 243);
     border-radius: 8px;
-    box-shadow: 5px 5px 5px #3f6562a0;
+    box-shadow: 4px 4px 20px #3f6562a0;
 }
 
+.column:hover{
+    transform: scale(1.03);
+    background-color: #ffd5a0;
+    transition: 0.2s ease-in-out;
+}
 .footer{
     display: flex;
     background-color: var(--dark-color-2);
@@ -121,4 +131,9 @@ main img{
 footer img {
     height: 54px;
     padding: 2px 20px 2px 20px;
+}
+
+nav a:hover{
+    color: #ffd5a0;
+    transition: 0.2s ease-in-out;
 }
