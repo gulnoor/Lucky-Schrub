@@ -79,8 +79,10 @@ nav a{
 }
 
 main img{
-    height: 200px;
-    width: 220px;
+    width: 100%;
+    /* width:240px; */
+    /* min-width: 200px; */
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -97,6 +99,7 @@ main img{
     display: flex;
     flex-direction: column;
     flex:1;
+    min-width: 185px;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
