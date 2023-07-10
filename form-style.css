@@ -13,10 +13,8 @@ form label{
 
 .row{
     display: flex;
-    grid-template-columns: 1fr 3fr;
     padding: 5px;
     width: 100%;
-    /* border: 2px solid #1dfc1d; */
     flex-wrap: wrap;
 }
 form label{

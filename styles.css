@@ -44,6 +44,8 @@ header p{
 
 nav{
     display: flex;
+    position: sticky;
+    top: 0;
     background-color: var(--primary-color);
     justify-content: center;
     padding: 10px;
