@@ -14,14 +14,13 @@ function anim_nav(){
         // navbar.style.marginLeft = "-5vw"
         // navbar.style.marginRight = "-5vw"
         // navbar.style.borderRadius = "0" 
-        navbar.style.animation = "extend_navbar 0.5s ease-in-out forwards"
+        navbar.style.animation = "extend_navbar 0.2s ease-in-out forwards"
     }
     else{
         
         // navbar.style.marginLeft = "0"
         // navbar.style.marginRight = "0"
         // navbar.style.borderRadius = "50vh"
-        
         navbar.style.animation = "contract_navbar 0.5s ease-in-out forwards"
     }
 

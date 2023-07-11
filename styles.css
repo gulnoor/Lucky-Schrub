@@ -49,7 +49,7 @@ header p{
     100%{
         margin-left: -5vw;
         margin-right: -5vw;
-        border-radius: = 0;
+        border-radius: 0;
     }
 }
 @keyframes contract_navbar {
@@ -58,8 +58,8 @@ header p{
         margin-right: var(--cnm);
     }
     50%{
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
     100%{
         margin-left: 0;
@@ -78,7 +78,7 @@ nav{
     border-radius: 50vh;
     --cnm: 0;
     transition: all 0.5s ease-in-out;
-    animation: extend_navbar 0.5s ease-in-out paused forwards;
+    animation: none 0.5s ease-in-out paused forwards;
 
 }
 nav a{
@@ -107,6 +107,7 @@ nav a{
     padding: 5px;
     color: white;
 }
+
 .hero p{
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -147,7 +148,7 @@ main img{
     display: flex;
     flex-direction: column;
     flex:1;
-    min-width: 185px;
+    min-width: 240px;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
