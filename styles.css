@@ -10,12 +10,13 @@
     --primary-color: #26877f;
     --dark-color-1: #17544f;
     --dark-color-2: #123d3c;
-
 }
+
 body{
     background: var(--light-color-2);
-    margin-left: 5%;
-    margin-right: 5%;
+    font-size: 100%;
+    /* padding: 20px; */
+    /* margin: 20px; */
 }
 header{
     display: flex;
@@ -23,26 +24,32 @@ header{
     align-items: center;
     color: var(--dark-color-1);
     padding: 10px; 
+    
 }
 #logo{
-    height: 120px;
+    height: 100px;
     padding-right: 20px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    /* For checking layout. Comment out later*/
+    border: 1px solid red;
 }
 header h1{
-    font-family: Sugo-Pro;
+    /* font-family: Sugo-Pro;
     font-size: 4rem;
     color: var(--dark-color-1);
-    text-align: center;
+    text-align: center; */
+    /* For checking layout. Comment out later*/
+    border: 1px solid red;
 }
 
 header p{
-    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* text-align: center;
     font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; */
+    /* For checking layout. Comment out later*/
+    border: 1px solid red;
     }
-@keyframes extend_navbar {
+/* @keyframes extend_navbar {
     0%{
         margin-left: var(--cnm);
         margin-right: var(--cnm);}
@@ -65,35 +72,49 @@ header p{
         margin-left: 0;
         margin-right: 0;
     }
+} */
+.column:hover{
+    transform: scale(1.03);
+    background-color: #ffd5a0;
+    transition: 0.2s ease-in-out;
 }
+
 nav{
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 1;
     background-color: var(--primary-color);
     justify-content: center;
-    padding: 5px;
+    /* padding: 5px; */
     margin-bottom: 10px;
     flex-wrap: wrap;
     border-radius: 50vh;
-    --cnm: 0;
-    transition: all 0.5s ease-in-out;
-    animation: none 0.5s ease-in-out paused forwards;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* --cnm: 0; */
+    transition: all 0.2s ease-in-out;
+    /* animation: none 0.5s ease-in-out paused forwards; */
 
 }
 nav a{
+    display: flex;
+    align-items: center;
     color: var(--light-color-2);
     text-decoration: none;
-    padding: 10px;
+    padding: 0.5em;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;  
+    min-width: 48px;
+    min-height: 48px;
+    /* border: #d8e2e0 solid 1px; */
 }
 .hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(38,135,127);
+    /* background: rgb(38,135,127); */
     background: linear-gradient(145deg, rgb(38, 135, 127) 0%, rgba(255,207,160,1) 100%);
     border-radius: 10px;
     /* background-size: cover;
@@ -129,39 +150,35 @@ nav a{
 
 main img{
     max-width: 100%;
-    /* width:240px; */
-    /* min-width: 200px; */
-    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
-.main-columns{
+.main-content{
     display: flex;
     max-width: 1080px;
+    justify-content: center;
     margin:auto;
     flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 20px;
+    /* row-gap: 20px;
+    column-gap: 20px; */
     padding: 20px;
 }
 .column{
     display: flex;
     flex-direction: column;
     flex:1;
-    min-width: 240px;
+    min-width: 200px;
+    max-width: 600px;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    margin: 8px;
     background-color:rgb(243, 243, 243);
     border-radius: 8px;
     box-shadow: 4px 4px 20px #3f6562a0;
 }
 
-.column:hover{
-    transform: scale(1.03);
-    background-color: #ffd5a0;
-    transition: 0.2s ease-in-out;
-}
+
 .footer{
     display: flex;
     background-color: var(--dark-color-2);
