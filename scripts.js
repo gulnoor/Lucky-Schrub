@@ -2,7 +2,7 @@ const buy_now = document.getElementById("buy-now");
 buy_now.addEventListener("click", ()=>window.document.location.href="booking-form.html")
 
 const navbar = document.querySelector("nav");
-window.addEventListener("scroll",anim_nav)
+// window.addEventListener("scroll",anim_nav)
 
 function anim_nav(){
     nav_top = navbar.getBoundingClientRect().top
