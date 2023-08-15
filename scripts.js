@@ -1,8 +1,23 @@
 (function () {
+  
   "use strict";
   const navbar = document.querySelector("nav");
   const dropdown = document.querySelector(".dropnav-content");
   const navbtn = navbar.querySelector(".dropnav-button");
+  const toggleThemeBtn = document.querySelector(".toggle-theme");
+  const rootElement = document.querySelector(":root");
+  toggleThemeBtn.addEventListener("click",toggleThemeHandler);
+  
+  function toggleThemeHandler(){
+    const rootComputed =getComputedStyle(rootElement); 
+    const currentBg = rootComputed.getPropertyValue("--app-background");
+    currentBg ==="white"?
+     rootElement.style.setProperty("--app-background"," #252526"):
+      (rootElement.style.setProperty("--app-background","white"));
+    null;
+
+
+  }
 
   /**
    * This function animates the navbar when the user scrolls.
@@ -38,10 +53,10 @@
     let maxh = window.getComputedStyle(dropdown).maxHeight;
     if (maxh !== "0px") {
       dropdown.style.maxHeight = "0px";
-      navbtn.innerHTML = "☰ MENU";
+      navbtn.textContent = "☰ MENU";
     } else {
       dropdown.style.maxHeight = "1000px";
-      navbtn.innerHTML = "&#x25BC;";
+      navbtn.textContent = "&#x25BC";
     }
   }
 
@@ -49,7 +64,7 @@
    * This function handles the mouseenter event on the navbar.
    */
   function navHover() {
-    navbtn.innerHTML = "&#x25BC;";
+    navbtn.textContent = "&#x25BC;";
     dropdown.style.maxHeight = "1000px";
   }
 
@@ -57,7 +72,7 @@
    * This function handles the mouseleave event on the navbar.
    */
   function navLeave() {
-    navbtn.innerHTML = "☰ MENU";
+    navbtn.textContent = "☰ MENU";
     if (window.innerWidth <= 500) {
       dropdown.style.maxHeight = "0px";
     }
@@ -72,8 +87,9 @@
 
   const mainContent = document.querySelector(".main-content");
   const buy_now = document.getElementById("buy-now");
-  buy_now.addEventListener(
-    "click",
-    (a, b) => (mainContent.innerHTML = "hello")
-  );
+  // buy_now.addEventListener(
+  //   "click",
+  //   (a, b) => (mainContent.textContent = "hello")
+  // );
+
 })();

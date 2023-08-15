@@ -1,74 +1,25 @@
 {
     "configurations": [
         {
-            "name": "Launch Chrome",
-            "request": "launch",
-            "runtimeArgs": [
-                "--remote-debugging-port=9222"
-            ],
-            "url": "http://127.0.0.1:5500",
-            "presentation": {
-                "hidden": true
-            },
-            "type": "chrome",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "pwa-msedge",
-            "name": "Launch Microsoft Edge",
-            "request": "launch",
-            "runtimeArgs": [
-                "--remote-debugging-port=9222"
-            ],
-            "url": "http://127.0.0.1:5500",
-            "presentation": {
-                "hidden": true
-            }
-        },
-        {
-            "type": "pwa-msedge",
-            "name": "Launch Microsoft Edge in headless mode",
-            "request": "launch",
-            "runtimeArgs": [
-                "--headless",
-                "--remote-debugging-port=9222"
-            ],
-            "url": "http://127.0.0.1:5500",
-            "presentation": {
-                "hidden": true
-            }
-        },
-        {
-            "type": "vscode-edge-devtools.debug",
-            "name": "Open Edge DevTools",
+            "address": "TCP/IP address of process to be debugged",
+            "localRoot": "${workspaceFolder}",
+            "name": "Attach to Remote",
+            "port": 9229,
+            "remoteRoot": "Absolute path to the remote directory containing the program",
             "request": "attach",
-            "url": "http://127.0.0.1:5500",
-            "presentation": {
-                "hidden": true
-            }
-        }
-    ],
-    "compounds": [
-        {
-            "name": "Launch Edge Headless and attach DevTools",
-            "configurations": [
-                "Launch Microsoft Edge in headless mode",
-                "Open Edge DevTools"
-            ]
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
         },
-        {
-            "name": "Launch Edge and attach DevTools",
-            "configurations": [
-                "Launch Microsoft Edge",
-                "Open Edge DevTools"
-            ]
-        },
-        {
-            "name": "Launch Chrome and attach DevTools",
-            "configurations": [
-                "Launch Chrome",
-                "Open Edge DevTools"
-            ]
-        }
+    {
+        "name": "Attach",
+        "port": 9229,
+        "request": "attach",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "node"
+    }
     ]
 }

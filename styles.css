@@ -17,10 +17,12 @@
   --primary-color: #26877f;
   --dark-color-1: #17544f;
   --dark-color-2: #123d3c;
+  --app-background: white;
+  --dark-background: #252526;
 }
 
 body {
-  background: var(--light-color-2);
+  background: var(--app-background);
   font-size: 100%;
   font-family: "Noto Serif Vithkuqi", serif;
 }
@@ -74,6 +76,7 @@ nav {
   /* padding-left: 1rem; */
   transition: margin 0.1s, border-radius 0.2s;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: 2px solid rgb(255, 0, 200);/* For debugging layout*/
 }
 
 .dropnav-content {
@@ -84,12 +87,12 @@ nav {
   transition: all 0.5s;
 }
 
-.dropnav-button,
+.nav-btn-container,
 nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
   min-width: 48px;
   min-height: 54px;
   color: whitesmoke;
@@ -98,8 +101,24 @@ nav a {
   /* padding-right: 1rem; */
   margin: auto;
   /* transition: all 0.2s; */
+  outline: 1px solid rgb(60, 0, 255);/* For debugging layout*/
 }
-
+.nav-btn-container{
+  justify-content: space-between;
+}
+.dropnav-button{
+  margin-left: 0.8rem;
+  float: left;
+  outline: 1px solid red;/* For debugging layout*/
+}
+.toggle-theme{
+  float: right;
+  margin-right: 0.8rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: 1px solid red;/* For debugging layout*/
+}
 a:active {
   background-color: #123d3c;
 }
