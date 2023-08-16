@@ -76,7 +76,6 @@ nav {
   /* padding-left: 1rem; */
   transition: margin 0.1s, border-radius 0.2s;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  outline: 2px solid rgb(255, 0, 200);/* For debugging layout*/
 }
 
 .dropnav-content {
@@ -101,7 +100,6 @@ nav a {
   /* padding-right: 1rem; */
   margin: auto;
   /* transition: all 0.2s; */
-  outline: 1px solid rgb(60, 0, 255);/* For debugging layout*/
 }
 .nav-btn-container{
   justify-content: space-between;
@@ -109,7 +107,6 @@ nav a {
 .dropnav-button{
   margin-left: 0.8rem;
   float: left;
-  outline: 1px solid red;/* For debugging layout*/
 }
 .toggle-theme{
   float: right;
@@ -117,7 +114,6 @@ nav a {
   background-color: transparent;
   border: none;
   color: white;
-  outline: 1px solid red;/* For debugging layout*/
 }
 a:active {
   background-color: #123d3c;

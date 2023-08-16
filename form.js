@@ -6,6 +6,13 @@
   const phone = document.getElementById("user-contact");
   const submit = document.getElementById("submitbtn");
 
+  const validationStatus = {
+    name: false,
+    email: false,
+    password: false,
+    phone: false,
+  };
+
 
   const validateEmail = (email) => {
     return String(email) 
