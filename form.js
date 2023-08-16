@@ -15,6 +15,33 @@
       );
   };
 
+  const validateInput = (e,type) => {
+    switch (type) {
+      case "name":
+        return name.value.length > 0;
+      case "email":
+        return String(email) 
+        .toLowerCase()
+        .match(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+      case "password":{
+        if (e.target.value.length < 8) {
+          password_error[0].style.display = "flex";
+          return false;
+    
+        } else {
+          password_error[0].style.display = "none";
+          return true;
+        }
+      }
+        return password.value.length >= 8;
+      case "phone":
+        // phone validation
+      throw new Error("Invalid field");
+    }
+
+  }
   const formValid = () => {
     if (
       name.value.length > 0 &&
