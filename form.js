@@ -35,7 +35,6 @@
           return true;
         }
       }
-        return password.value.length >= 8;
       case "phone":
         // phone validation
       throw new Error("Invalid field");
