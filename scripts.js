@@ -14,9 +14,6 @@
     currentBg ==="white"?
      rootElement.style.setProperty("--app-background"," #252526"):
       (rootElement.style.setProperty("--app-background","white"));
-    null;
-
-
   }
 
   /**
