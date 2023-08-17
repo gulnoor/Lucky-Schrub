@@ -34,6 +34,23 @@ body {
   z-index: 420;
   display: none;
 }
+.confirmation-dialog{
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  background-color: rgb(125, 255, 196);
+  z-index: 421;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 header {
   display: flex;
   justify-content: center;
