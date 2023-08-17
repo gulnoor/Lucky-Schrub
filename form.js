@@ -1,4 +1,6 @@
 (function () {
+  const overlay = document.getElementsByClassName("overlay")[0];
+  overlay.addEventListener("click", () => overlay.style.display = "none")
   const password = document.getElementById("password");
   const password_err_message = document.getElementsByClassName("password-error");
   const email = document.getElementById("user-email");
@@ -66,7 +68,7 @@
   const submitHandler = (e) => {
     e.preventDefault();
     if (isFormValid) {
-      alert("registration successful");
+      overlay.style.display = "block";
       reset_form();
     } else {
       alert("invalid");
