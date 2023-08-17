@@ -15,10 +15,10 @@
 
   const validateInput = (e) => {
     switch (e.target.name) {
-      case "username":
+      case "username": {
         name_status = name.value.length > 0;
         break;
-
+      }
       case "email": {
         email_status = Boolean(
           String(e.target.value)
@@ -29,7 +29,6 @@
         );
         break;
       }
-
       case "password": {
         if (e.target.value.length < 8) {
           password_err_message[0].style.display = "flex";
@@ -40,11 +39,9 @@
         }
         break;
       }
-
       case "user-contacts":
         // phone validation
         break;
-
       default:
         throw new Error("Invalid input");
     }
