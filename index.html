@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div class="overlay">ggggggg</div>
+  <div class="overlay"></div>
   <div class="confirmation-dialog"></div>
   <header>
     <div class="logo-container">
@@ -89,6 +89,18 @@
       </div>
 
     </div> -->
+    <div class="landing-page">
+      <div class = "landing-text">
+        <h1>Lucky Shrub</h1>
+        <!-- <p>Garden Design & Nursery</p> -->
+        <p>Transform your outdoor space</p>
+        <p>Let us create your dream garden</p>
+        <input id="buy-now" type="button" value="Buy Now">
+      </div>
+      <div class = "landing-image">
+        <img src="./assets/Plants/pexels-photo-904621.webp" alt="">
+      </div>
+    </div>
     <div>
       <form class="reg-form" action="index.html" method="get">
         <fieldset>
@@ -110,6 +122,24 @@
             <input name="password" id="password" type="password"></input>
             <span class="password-error">Password must be at least 8 characters long</span>
 
+          </div>
+          <div class="row row6">
+            <label>Which whale is the best?</label>
+            <fieldset >
+
+              <div class="radio">
+                <input name="whale" id="humpback" value="humpback" type="radio" required>
+                <label for="humpback">Humpback</label>
+              </div>
+              <div class="radio">
+                <input name="whale" id = "blue" value="blue" type="radio">
+                <label for="blue">Blue Whale</label>
+              </div>
+              <div class="radio">
+                <input name="whale" id = "beluga" value="beluga" type="radio">
+                <label for="beluga">Beluga</label>
+              </div>
+            </fieldset>
           </div>
           <div class="row row5">
             <input id="submitbtn" type="submit" disabled>

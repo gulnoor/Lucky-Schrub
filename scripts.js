@@ -11,9 +11,9 @@
   function toggleThemeHandler(){
     const rootComputed =getComputedStyle(rootElement); 
     const currentBg = rootComputed.getPropertyValue("--app-background");
-    currentBg ==="white"?
-     rootElement.style.setProperty("--app-background"," #252526"):
-      (rootElement.style.setProperty("--app-background","white"));
+    currentBg ==="#d8e2e0"?
+     (rootElement.style.setProperty("--app-background"," #252526"))
+     :(rootElement.style.setProperty("--app-background","#d8e2e0"));
   }
 
   /**
@@ -53,7 +53,7 @@
       navbtn.textContent = "☰ MENU";
     } else {
       dropdown.style.maxHeight = "1000px";
-      navbtn.textContent = "&#x25BC";
+      navbtn.textContent = "close";
     }
   }
 
@@ -61,7 +61,7 @@
    * This function handles the mouseenter event on the navbar.
    */
   function navHover() {
-    navbtn.textContent = "&#x25BC;";
+    navbtn.textContent = "Close";
     dropdown.style.maxHeight = "1000px";
   }
 
