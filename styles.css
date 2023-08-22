@@ -88,12 +88,13 @@ header p {
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-evenly;
+  padding: 1rem;
   
   align-items: center;
 
   color: white;
   border-radius: 20px;
-  height: 60vh;
+  min-height: 60vh;
   margin: 1rem;
 
 }
@@ -204,10 +205,10 @@ a:active {
     padding: 0 1rem;
     transition: all 0.5s;
   }
-
-  .dropnav-button {
+  .nav-btn-container{
     display: none;
   }
+
 }
 
 .hero-container {
