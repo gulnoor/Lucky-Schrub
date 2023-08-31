@@ -1,5 +1,5 @@
 (function () {
-  
+
   "use strict";
   const navbar = document.querySelector("nav");
   const dropdown = document.querySelector(".dropnav-content");
@@ -7,9 +7,9 @@
   const toggleThemeBtn = document.querySelector(".toggle-theme");
   const rootElement = document.querySelector(":root");
   toggleThemeBtn.addEventListener("click",toggleThemeHandler);
-  
+
   function toggleThemeHandler(){
-    const rootComputed =getComputedStyle(rootElement); 
+    const rootComputed =getComputedStyle(rootElement);
     const currentBg = rootComputed.getPropertyValue("--app-background");
     currentBg ==="#d8e2e0"?
      (rootElement.style.setProperty("--app-background"," #252526"))
